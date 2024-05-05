@@ -4,19 +4,11 @@ set(CMAKE_C_STANDARD  11)
 
 #  определение  точки  входа.  Будет  запущен  файл  main.c.
 #  указывается  произвольная  метка,  в  данном  случае  -  project
-add_executable(project  main.c
-        string/string_.h)
+add_executable(project  main.c)
 
 #  создаём  библиотеку
 add_library(str  string/string_.h  string/string_.c
-        #  string/tasks/digitToStartTransform.h
-        #  string/tasks/reverseWords.h
-        #  string/tasks/replaceDigitsBySpaces.h
-        #  ...
-        #  <  файл  с  решением  задачи  >
-        #  ...
-        #  string/tasks/hasPairOfWordsWithEqualLetterSet.h
-        #  string/tasks/printWordsNonEqualLastWord.h
+        string/tasks/removeNonLetters.h
 )
 
 # описываем, что для запуска project потребуется сборка tasks

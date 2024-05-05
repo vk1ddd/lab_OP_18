@@ -3,6 +3,7 @@
 //
 #include <ctype.h>
 #include "string_.h"
+#include <stdio.h>
 
 size_t strlen_(const char *begin) {
     char *end = begin;
@@ -110,4 +111,24 @@ char *copyIfReverse(const char *rbeginSource, const char *beginSource, char *beg
     }
 
     return beginDestination;
+}
+
+void assertString(const char *expected, char *got,
+                  char const *fileName, char const *funcName,
+                  int line) {
+    if (strcmp_(expected, got)) {
+        fprintf(stderr, "File  %s\n", fileName);
+        fprintf(stderr, "%s  -  failed  on  line  %d\n", funcName, line);
+        fprintf(stderr, "Expected:  \"%s\"\n", expected);
+        fprintf(stderr, "Got:  \"%s\"\n\n", got);
+    } else
+        fprintf(stderr, "%s  -  OK\n", funcName);
+}
+
+char* getEndOfString(char* s) {
+    char* start = s;
+    while (*start != '\0')
+        start++;
+
+    return start;
 }

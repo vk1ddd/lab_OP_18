@@ -1138,6 +1138,42 @@
 			"value" : "TRUE"
 		},
 		{
+			"name" : "code_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ivanu/CLionProjects/lab_OP_18/cmake-build-debug"
+		},
+		{
+			"name" : "code_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "code_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ivanu/CLionProjects/lab_OP_18"
+		},
+		{
 			"name" : "lab_OP_18_BINARY_DIR",
 			"properties" : 
 			[

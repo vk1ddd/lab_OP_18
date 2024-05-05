@@ -7,6 +7,8 @@
 
 #include <stdlib.h>
 
+#define ASSERT_STRING(expected, got) assertString(expected, got, __FILE__, __FUNCTION__, __LINE__)
+
 // возвращает кол-во символов
 size_t strlen_(const char *begin);
 
@@ -36,5 +38,9 @@ char *copyIf(const char *beginSource, const char *endSource, char *beginDestinat
 
 //возвращает фрагмент памяти от rbeginSource до beginSource, удовлетворяющий функции-предикату f
 char *copyIfReverse(const char *rbeginSource, const char *beginSource, char *beginDestination, int (*f)(int));
+
+void assertString(const char* expected, char* got, char const* file_name, char const* func_name, int line);
+
+char* getEndOfString(char* s);
 
 #endif //LAB_OP_17_STRING__H
