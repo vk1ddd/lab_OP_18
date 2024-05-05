@@ -1,0 +1,4 @@
+C:/Users/ivanu/CLionProjects/lab_OP_18/cmake-build-debug/CMakeFiles/project.dir
+C:/Users/ivanu/CLionProjects/lab_OP_18/cmake-build-debug/CMakeFiles/str.dir
+C:/Users/ivanu/CLionProjects/lab_OP_18/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ivanu/CLionProjects/lab_OP_18/cmake-build-debug/CMakeFiles/rebuild_cache.dir
