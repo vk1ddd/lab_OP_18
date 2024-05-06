@@ -9,6 +9,11 @@
 
 #define ASSERT_STRING(expected, got) assertString(expected, got, __FILE__, __FUNCTION__, __LINE__)
 
+typedef  struct  WordDescriptor  {
+    char  *begin;  //  позиция  начала  слова
+    char  *end;      //  позиция  первого  символа,  после  последнего  символа
+}  WordDescriptor;
+
 // возвращает кол-во символов
 size_t strlen_(const char *begin);
 
@@ -42,5 +47,7 @@ char *copyIfReverse(const char *rbeginSource, const char *beginSource, char *beg
 void assertString(const char* expected, char* got, char const* file_name, char const* func_name, int line);
 
 char* getEndOfString(char* s);
+
+int  getWord(char  *beginSearch,  WordDescriptor  *word);
 
 #endif //LAB_OP_17_STRING__H

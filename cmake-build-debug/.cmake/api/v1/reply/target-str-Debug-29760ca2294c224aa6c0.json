@@ -69,7 +69,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				2
+				2,
+				3
 			]
 		},
 		{
@@ -96,6 +97,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/removeNonLetters.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/removeExtraSpaces.h",
 			"sourceGroupIndex" : 0
 		}
 	],
