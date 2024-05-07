@@ -5,14 +5,21 @@
 #ifndef LAB_OP_17_STRING__H
 #define LAB_OP_17_STRING__H
 
-#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <ctype.h>
 
 #define ASSERT_STRING(expected, got) assertString(expected, got, __FILE__, __FUNCTION__, __LINE__)
 
-typedef  struct  WordDescriptor  {
-    char  *begin;  //  позиция  начала  слова
-    char  *end;      //  позиция  первого  символа,  после  последнего  символа
-}  WordDescriptor;
+#define MAX_STRING_SIZE 200
+
+extern char _stringBuffer[MAX_STRING_SIZE + 1];
+
+typedef struct WordDescriptor {
+    char *begin;  //  позиция  начала  слова
+    char *end;      //  позиция  первого  символа,  после  последнего  символа
+} WordDescriptor;
 
 // возвращает кол-во символов
 size_t strlen_(const char *begin);
@@ -44,10 +51,12 @@ char *copyIf(const char *beginSource, const char *endSource, char *beginDestinat
 //возвращает фрагмент памяти от rbeginSource до beginSource, удовлетворяющий функции-предикату f
 char *copyIfReverse(const char *rbeginSource, const char *beginSource, char *beginDestination, int (*f)(int));
 
-void assertString(const char* expected, char* got, char const* file_name, char const* func_name, int line);
+void assertString(const char *expected, char *got, char const *file_name, char const *func_name, int line);
 
-char* getEndOfString(char* s);
+char *getEndOfString(char *s);
 
-int  getWord(char  *beginSearch,  WordDescriptor  *word);
+int getWord(char *beginSearch, WordDescriptor *word);
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
 #endif //LAB_OP_17_STRING__H

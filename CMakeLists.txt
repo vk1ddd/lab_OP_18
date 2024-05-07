@@ -10,6 +10,7 @@ add_executable(project main.c)
 add_library(str string/string_.h string/string_.c
         string/tasks/removeNonLetters.h
         string/tasks/removeExtraSpaces.h
+        string/tasks/getWordReverse.h
 )
 
 # описываем, что для запуска project потребуется сборка tasks

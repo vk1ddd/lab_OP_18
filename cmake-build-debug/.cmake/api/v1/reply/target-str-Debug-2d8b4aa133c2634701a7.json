@@ -70,7 +70,8 @@
 			[
 				0,
 				2,
-				3
+				3,
+				4
 			]
 		},
 		{
@@ -102,6 +103,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/removeExtraSpaces.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/getWordReverse.h",
 			"sourceGroupIndex" : 0
 		}
 	],

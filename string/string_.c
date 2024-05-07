@@ -5,6 +5,8 @@
 #include "string_.h"
 #include <stdio.h>
 
+char _stringBuffer[MAX_STRING_SIZE + 1];
+
 size_t strlen_(const char *begin) {
     char *end = begin;
 
@@ -75,15 +77,13 @@ int strcmp_(const char *lhs, const char *rhs) {
 }
 
 char *copy(const char *beginSource, const char *endSource, char *beginDestination) {
-    char *originalBeginDestination = beginDestination;
-
     while (beginSource != endSource) {
         *beginDestination = *beginSource;
         ++beginSource;
         ++beginDestination;
     }
 
-    return originalBeginDestination;
+    return beginDestination + (endSource - beginSource);
 }
 
 char *copyIf(const char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
@@ -125,10 +125,32 @@ void assertString(const char *expected, char *got,
         fprintf(stderr, "%s  -  OK\n", funcName);
 }
 
-char* getEndOfString(char* s) {
-    char* start = s;
+char *getEndOfString(char *s) {
+    char *start = s;
     while (*start != '\0')
         start++;
 
     return start;
+}
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpace(word->begin);
+
+    return 1;
+}
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
+    word->begin = findNonSpaceReverse(rbegin, rend);
+
+    if (word->begin == rend)
+        return 0;
+
+    word->end = findSpaceReverse(word->begin, rend);
+
+    return 1;
 }
