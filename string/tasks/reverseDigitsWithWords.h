@@ -2,8 +2,8 @@
 // Created by ivanu on 07.05.2024.
 //
 
-#ifndef PROJECT_GETWORDREVERSE_H
-#define PROJECT_GETWORDREVERSE_H
+#ifndef PROJECT_REVERSEDIGITSWITHWORDS_H
+#define PROJECT_REVERSEDIGITSWITHWORDS_H
 
 #include "../string_.h"
 
@@ -65,10 +65,10 @@ void test2_digitsToEndLetters_twoWordsWithDigits() {
     ASSERT_STRING(a, "Hello223 world21");
 }
 
-void tests_getWordReverse() {
+void tests_reverseDigitsWithWords() {
     test_reverseDigitToBeginningLetters_twoWordsWithDigits();
     test1_digitsToEndLetters_oneWordWithDigits();
     test2_digitsToEndLetters_twoWordsWithDigits();
 }
 
-#endif //PROJECT_GETWORDREVERSE_H
+#endif //PROJECT_REVERSEDIGITSWITHWORDS_H
