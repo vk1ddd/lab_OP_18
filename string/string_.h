@@ -12,7 +12,9 @@
 
 #define ASSERT_STRING(expected, got) assertString(expected, got, __FILE__, __FUNCTION__, __LINE__)
 
-#define MAX_STRING_SIZE 200
+#define  MAX_STRING_SIZE  100
+#define  MAX_N_WORDS_IN_STRING  100
+#define  MAX_WORD_SIZE  20
 
 extern char _stringBuffer[MAX_STRING_SIZE + 1];
 

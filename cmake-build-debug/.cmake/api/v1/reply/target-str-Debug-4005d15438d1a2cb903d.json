@@ -71,7 +71,8 @@
 				0,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		},
 		{
@@ -107,7 +108,12 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "string/tasks/getWordReverse.h",
+			"path" : "string/tasks/reverseDigitsWithWords.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/replaceDigitsToSpace.h",
 			"sourceGroupIndex" : 0
 		}
 	],
