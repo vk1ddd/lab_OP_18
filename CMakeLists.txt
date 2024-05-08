@@ -12,6 +12,7 @@ add_library(str string/string_.h string/string_.c
         string/tasks/removeExtraSpaces.h
         string/tasks/reverseDigitsWithWords.h
         string/tasks/replaceDigitsToSpace.h
+        string/tasks/replaceWord.h
 )
 
 # описываем, что для запуска project потребуется сборка tasks

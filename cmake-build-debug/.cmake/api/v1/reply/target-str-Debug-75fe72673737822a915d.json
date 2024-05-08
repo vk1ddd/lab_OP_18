@@ -72,7 +72,8 @@
 				2,
 				3,
 				4,
-				5
+				5,
+				6
 			]
 		},
 		{
@@ -114,6 +115,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/replaceDigitsToSpace.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/replaceWord.h",
 			"sourceGroupIndex" : 0
 		}
 	],
