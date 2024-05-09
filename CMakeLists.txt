@@ -14,6 +14,7 @@ add_library(str string/string_.h string/string_.c
         string/tasks/replaceDigitsToSpace.h
         string/tasks/replaceWord.h
         string/tasks/lexicographicallyCorrect.h
+        string/tasks/reversePrint.h
 )
 
 # описываем, что для запуска project потребуется сборка tasks

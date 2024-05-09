@@ -5,6 +5,9 @@
 #include "string_.h"
 #include <stdio.h>
 
+BagOfWords _bag = {.words = NULL, .size = 0};
+BagOfWords _bag2 = {.words = NULL, .size = 0};
+
 char _stringBuffer[MAX_STRING_SIZE + 1];
 
 size_t strlen_(const char *begin) {
@@ -170,4 +173,15 @@ int  areWordsEqual(WordDescriptor  w1, WordDescriptor  w2){
     }
 
     return true;
+}
+
+void getBagOfWords(BagOfWords* bag, char* s) {
+    char* beginSearch = s;
+    bag->size = 0;
+
+    while (getWord(beginSearch, &bag->words[bag->size])) {
+        beginSearch = bag->words[bag->size].end;
+
+        bag->size++;
+    }
 }

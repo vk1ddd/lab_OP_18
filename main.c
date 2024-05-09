@@ -4,6 +4,7 @@
 #include "string/tasks/replaceDigitsToSpace.h"
 #include "string/tasks/replaceWord.h"
 #include "string/tasks/lexicographicallyCorrect.h"
+#include "string/tasks/reversePrint.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -12,6 +13,7 @@ int main(void) {
     tests_replaceDigitsToSpace();
     tests_replaceWord();
     tests_lexicographicallyCorrect();
+    tests_reversePrint();
 
     return 0;
 }
