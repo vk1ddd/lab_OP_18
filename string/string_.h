@@ -61,4 +61,6 @@ int getWord(char *beginSearch, WordDescriptor *word);
 
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
+int  areWordsEqual(WordDescriptor  w1, WordDescriptor  w2);
+
 #endif //LAB_OP_17_STRING__H

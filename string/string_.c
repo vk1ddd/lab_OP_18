@@ -154,3 +154,20 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
 
     return 1;
 }
+
+int  areWordsEqual(WordDescriptor  w1, WordDescriptor  w2){
+    if (strlen_(w1.begin) != strlen_(w2.begin))
+        return false;
+
+    char *w1Check = w1.begin;
+    char *w2Check = w2.begin;
+    while(*w1Check != '\0'){
+        if(*w1Check != *w2Check)
+            return false;
+
+        w1Check++;
+        w2Check++;
+    }
+
+    return true;
+}
