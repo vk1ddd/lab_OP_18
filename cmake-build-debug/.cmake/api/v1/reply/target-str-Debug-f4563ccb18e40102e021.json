@@ -78,7 +78,8 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		},
 		{
@@ -150,6 +151,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/reverseString.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/wordBeforeFirstWordWithA.h",
 			"sourceGroupIndex" : 0
 		}
 	],

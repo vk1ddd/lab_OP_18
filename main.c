@@ -8,6 +8,7 @@
 #include "string/tasks/numberOfPalindromes.h"
 #include "string/tasks/combiningStrings.h"
 #include "string/tasks/reverseString.h"
+#include "string/tasks/wordBeforeFirstWordWithA.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -20,6 +21,7 @@ int main(void) {
     tests_numberOfPalindromes();
     tests_combiningStrings();
     tests_reverseString();
+    tests_wordBeforeFirstWordWithA();
 
     return 0;
 }
