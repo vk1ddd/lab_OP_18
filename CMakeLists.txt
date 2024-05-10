@@ -16,6 +16,7 @@ add_library(str string/string_.h string/string_.c
         string/tasks/lexicographicallyCorrect.h
         string/tasks/reversePrint.h
         string/tasks/numberOfPalindromes.h
+        string/tasks/combiningStrings.h
 )
 
 # описываем, что для запуска project потребуется сборка tasks

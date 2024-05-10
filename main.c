@@ -6,6 +6,7 @@
 #include "string/tasks/lexicographicallyCorrect.h"
 #include "string/tasks/reversePrint.h"
 #include "string/tasks/numberOfPalindromes.h"
+#include "string/tasks/combiningStrings.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -16,6 +17,7 @@ int main(void) {
     tests_lexicographicallyCorrect();
     tests_reversePrint();
     tests_numberOfPalindromes();
+    tests_combiningStrings();
 
     return 0;
 }

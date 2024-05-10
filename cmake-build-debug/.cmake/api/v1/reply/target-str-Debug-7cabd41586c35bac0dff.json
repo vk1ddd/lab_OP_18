@@ -76,7 +76,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		},
 		{
@@ -138,6 +139,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/numberOfPalindromes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/combiningStrings.h",
 			"sourceGroupIndex" : 0
 		}
 	],
