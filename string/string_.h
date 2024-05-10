@@ -24,7 +24,8 @@ typedef struct WordDescriptor {
 } WordDescriptor;
 
 typedef  struct  BagOfWords  {
-    WordDescriptor  words[MAX_N_WORDS_IN_STRING]; size_t  size;
+    WordDescriptor  words[MAX_N_WORDS_IN_STRING];
+    size_t  size;
 }  BagOfWords;
 
 extern BagOfWords _bag;
@@ -71,5 +72,7 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 int  areWordsEqual(WordDescriptor  w1, WordDescriptor  w2);
 
 void  getBagOfWords(BagOfWords  *bag,  char  *s);
+
+void freeStringBuffer();
 
 #endif //LAB_OP_17_STRING__H

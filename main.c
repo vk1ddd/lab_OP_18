@@ -7,6 +7,7 @@
 #include "string/tasks/reversePrint.h"
 #include "string/tasks/numberOfPalindromes.h"
 #include "string/tasks/combiningStrings.h"
+#include "string/tasks/reverseString.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -18,6 +19,7 @@ int main(void) {
     tests_reversePrint();
     tests_numberOfPalindromes();
     tests_combiningStrings();
+    tests_reverseString();
 
     return 0;
 }

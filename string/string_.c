@@ -185,3 +185,13 @@ void getBagOfWords(BagOfWords* bag, char* s) {
         bag->size++;
     }
 }
+
+void freeStringBuffer(){
+    char* ptr = _stringBuffer;
+    int index = 0;
+    while (index <= 100) {
+        *ptr = '\0';
+        ptr++;
+        index++;
+    }
+}

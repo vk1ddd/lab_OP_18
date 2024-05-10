@@ -77,7 +77,8 @@
 				7,
 				8,
 				9,
-				10
+				10,
+				11
 			]
 		},
 		{
@@ -144,6 +145,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/combiningStrings.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/reverseString.h",
 			"sourceGroupIndex" : 0
 		}
 	],
