@@ -2,8 +2,8 @@
 // Created by ivanu on 09.05.2024.
 //
 
-#ifndef PROJECT_REVERCEPRINT_H
-#define PROJECT_REVERCEPRINT_H
+#ifndef PROJECT_REVERSEPRINT_H
+#define PROJECT_REVERSEPRINT_H
 
 void printWordDescriptor(WordDescriptor word) {
     while (word.begin != word.end) {
@@ -47,4 +47,4 @@ void tests_reversePrint(){
     printf("\n");
 }
 
-#endif //PROJECT_REVERCEPRINT_H
+#endif //PROJECT_REVERSEPRINT_H

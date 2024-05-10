@@ -5,6 +5,7 @@
 #include "string/tasks/replaceWord.h"
 #include "string/tasks/lexicographicallyCorrect.h"
 #include "string/tasks/reversePrint.h"
+#include "string/tasks/numberOfPalindromes.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -14,6 +15,7 @@ int main(void) {
     tests_replaceWord();
     tests_lexicographicallyCorrect();
     tests_reversePrint();
+    tests_numberOfPalindromes();
 
     return 0;
 }
