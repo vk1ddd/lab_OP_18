@@ -211,7 +211,7 @@ void wordDescriptorToString(WordDescriptor word, char *destination) {
 
 void freeWordDescriptor(WordDescriptor *word) {
     char *ptr = word->begin;
-    while (ptr != word->end) {
+    while (*ptr != *word->end) {
         *ptr = '\0';
         ptr++;
     }

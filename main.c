@@ -13,6 +13,8 @@
 #include "string/tasks/isEqualWordsInString.h"
 #include "string/tasks/areThereAnyWordsFromTheSameSetOfLetters.h"
 #include "string/tasks/stringWithoutWordsEqualLastWord.h"
+#include "string/tasks/getWordBeforeWordThatInSecondLine.h"
+#include "string/tasks/removePalindromesSequenceRepeating_characters.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -30,6 +32,8 @@ int main(void) {
     tests_isEqualWordsInString();
     tests_areThereAnyWordsFromTheSameSetOfLetters();
     tests_stringWithoutWordsEqualLastWord();
+    tests_getWordBeforeWordThatInSecondLine();
+    removePalindromesSequenceRepeating_characters();
 
     return 0;
 }
