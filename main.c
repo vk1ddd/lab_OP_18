@@ -14,7 +14,7 @@
 #include "string/tasks/areThereAnyWordsFromTheSameSetOfLetters.h"
 #include "string/tasks/stringWithoutWordsEqualLastWord.h"
 #include "string/tasks/getWordBeforeWordThatInSecondLine.h"
-#include "string/tasks/removePalindromesSequenceRepeating_characters.h"
+#include "string/tasks/removePalindromes.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -33,7 +33,7 @@ int main(void) {
     tests_areThereAnyWordsFromTheSameSetOfLetters();
     tests_stringWithoutWordsEqualLastWord();
     tests_getWordBeforeWordThatInSecondLine();
-    removePalindromesSequenceRepeating_characters();
+    tests_removePalindromes();
 
     return 0;
 }

@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -84,7 +84,8 @@
 				14,
 				15,
 				16,
-				17
+				17,
+				18
 			]
 		},
 		{
@@ -186,6 +187,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/getWordBeforeWordThatInSecondLine.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/removePalindromes.h",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -23,8 +23,8 @@ add_library(str string/string_.h string/string_.c
         string/tasks/isEqualWordsInString.h
         string/tasks/areThereAnyWordsFromTheSameSetOfLetters.h
         string/tasks/stringWithoutWordsEqualLastWord.h
-        string/tasks/getWordBeforeWordThatInSecondLine.h\
-        string/tasks/removePalindromesSequenceRepeating_characters.h
+        string/tasks/getWordBeforeWordThatInSecondLine.h
+        string/tasks/removePalindromes.h
 )
 
 # описываем, что для запуска project потребуется сборка tasks
