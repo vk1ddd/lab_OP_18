@@ -20,6 +20,7 @@ add_library(str string/string_.h string/string_.c
         string/tasks/reverseString.h
         string/tasks/wordBeforeFirstWordWithA.h
         string/tasks/lastWordInFirstStringInSecondString.h
+        string/tasks/isEqualWordsInString.h
 )
 
 # описываем, что для запуска project потребуется сборка tasks

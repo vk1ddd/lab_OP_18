@@ -164,7 +164,7 @@ int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
 
     char *w1Check = w1.begin;
     char *w2Check = w2.begin;
-    while (*w1Check != '\0') {
+    while (w1Check != w1.end) {
         if (*w1Check != *w2Check)
             return false;
 
