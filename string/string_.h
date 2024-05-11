@@ -75,4 +75,8 @@ void  getBagOfWords(BagOfWords  *bag,  char  *s);
 
 void freeStringBuffer();
 
+void  wordDescriptorToString(WordDescriptor  word,  char  *destination);
+
+void freeWordDescriptor(WordDescriptor *word);
+
 #endif //LAB_OP_17_STRING__H

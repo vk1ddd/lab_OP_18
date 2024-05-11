@@ -79,7 +79,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		},
 		{
@@ -156,6 +157,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/wordBeforeFirstWordWithA.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/lastWordInFirstStringInSecondString.h",
 			"sourceGroupIndex" : 0
 		}
 	],

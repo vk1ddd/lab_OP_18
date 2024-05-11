@@ -158,14 +158,14 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     return 1;
 }
 
-int  areWordsEqual(WordDescriptor  w1, WordDescriptor  w2){
-    if (strlen_(w1.begin) != strlen_(w2.begin))
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
+    if (w1.end - w1.begin != w2.end - w2.begin)
         return false;
 
     char *w1Check = w1.begin;
     char *w2Check = w2.begin;
-    while(*w1Check != '\0'){
-        if(*w1Check != *w2Check)
+    while (*w1Check != '\0') {
+        if (*w1Check != *w2Check)
             return false;
 
         w1Check++;
@@ -175,8 +175,8 @@ int  areWordsEqual(WordDescriptor  w1, WordDescriptor  w2){
     return true;
 }
 
-void getBagOfWords(BagOfWords* bag, char* s) {
-    char* beginSearch = s;
+void getBagOfWords(BagOfWords *bag, char *s) {
+    char *beginSearch = s;
     bag->size = 0;
 
     while (getWord(beginSearch, &bag->words[bag->size])) {
@@ -186,12 +186,33 @@ void getBagOfWords(BagOfWords* bag, char* s) {
     }
 }
 
-void freeStringBuffer(){
-    char* ptr = _stringBuffer;
+void freeStringBuffer() {
+    char *ptr = _stringBuffer;
     int index = 0;
     while (index <= 100) {
         *ptr = '\0';
         ptr++;
         index++;
+    }
+}
+
+void wordDescriptorToString(WordDescriptor word, char *destination) {
+    if (word.begin == NULL && word.end == NULL)
+        return;
+
+    while (word.begin <= word.end) {
+        *destination = *word.begin;
+        word.begin++;
+        destination++;
+    }
+
+    *destination = '\0';
+}
+
+void freeWordDescriptor(WordDescriptor *word) {
+    char *ptr = word->begin;
+    while (ptr != word->end) {
+        *ptr = '\0';
+        ptr++;
     }
 }
