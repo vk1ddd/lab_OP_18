@@ -23,10 +23,10 @@ typedef struct WordDescriptor {
     char *end;      //  позиция  первого  символа,  после  последнего  символа
 } WordDescriptor;
 
-typedef  struct  BagOfWords  {
-    WordDescriptor  words[MAX_N_WORDS_IN_STRING];
-    size_t  size;
-}  BagOfWords;
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
 
 extern BagOfWords _bag;
 extern BagOfWords _bag2;
@@ -69,13 +69,13 @@ int getWord(char *beginSearch, WordDescriptor *word);
 
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
-int  areWordsEqual(WordDescriptor  w1, WordDescriptor  w2);
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
 
-void  getBagOfWords(BagOfWords  *bag,  char  *s);
+void getBagOfWords(BagOfWords *bag, char *s);
 
 void freeStringBuffer();
 
-void  wordDescriptorToString(WordDescriptor  word,  char  *destination);
+void wordDescriptorToString(WordDescriptor word, char *destination);
 
 void freeWordDescriptor(WordDescriptor *word);
 

@@ -82,7 +82,8 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				16
 			]
 		},
 		{
@@ -174,6 +175,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/areThereAnyWordsFromTheSameSetOfLetters.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/stringWithoutWordsEqualLastWord.h",
 			"sourceGroupIndex" : 0
 		}
 	],

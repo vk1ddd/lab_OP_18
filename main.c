@@ -12,6 +12,7 @@
 #include "string/tasks/lastWordInFirstStringInSecondString.h"
 #include "string/tasks/isEqualWordsInString.h"
 #include "string/tasks/areThereAnyWordsFromTheSameSetOfLetters.h"
+#include "string/tasks/stringWithoutWordsEqualLastWord.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -28,6 +29,7 @@ int main(void) {
     tests_lastWordInFirstStringInSecondString();
     tests_isEqualWordsInString();
     tests_areThereAnyWordsFromTheSameSetOfLetters();
+    tests_stringWithoutWordsEqualLastWord();
 
     return 0;
 }
