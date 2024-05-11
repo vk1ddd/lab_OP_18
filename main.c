@@ -11,6 +11,7 @@
 #include "string/tasks/wordBeforeFirstWordWithA.h"
 #include "string/tasks/lastWordInFirstStringInSecondString.h"
 #include "string/tasks/isEqualWordsInString.h"
+#include "string/tasks/areThereAnyWordsFromTheSameSetOfLetters.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -26,6 +27,7 @@ int main(void) {
     tests_wordBeforeFirstWordWithA();
     tests_lastWordInFirstStringInSecondString();
     tests_isEqualWordsInString();
+    tests_areThereAnyWordsFromTheSameSetOfLetters();
 
     return 0;
 }
