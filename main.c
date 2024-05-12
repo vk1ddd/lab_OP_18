@@ -15,6 +15,7 @@
 #include "string/tasks/stringWithoutWordsEqualLastWord.h"
 #include "string/tasks/getWordBeforeWordThatInSecondLine.h"
 #include "string/tasks/removePalindromes.h"
+#include "string/tasks/getIdenticalStringInSize.h"
 
 int main(void) {
     tests_removeNonLetters();
@@ -34,6 +35,7 @@ int main(void) {
     tests_stringWithoutWordsEqualLastWord();
     tests_getWordBeforeWordThatInSecondLine();
     tests_removePalindromes();
+    tests_getIdenticalStringInSize();
 
     return 0;
 }
