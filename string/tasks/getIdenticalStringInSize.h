@@ -5,25 +5,25 @@
 #ifndef PROJECT_GETIDENTICALSTRINGINSIZE_H
 #define PROJECT_GETIDENTICALSTRINGINSIZE_H
 
-void getIdenticalStringInSize(char *s1, char *s2, size_t n1, size_t n2){
+void getIdenticalStringInSize(char *s1, char *s2, size_t n1, size_t n2) {
     BagOfWords minS;
     BagOfWords maxS;
 
     size_t min;
     char *rec;
-    if (n1 >= n2){
+    if (n1 >= n2) {
         rec = getEndOfString(s2);
         getBagOfWords(&maxS, s1);
         getBagOfWords(&minS, s2);
         min = n2;
-    }else{
+    } else {
         rec = getEndOfString(s1);
         getBagOfWords(&maxS, s2);
         getBagOfWords(&minS, s1);
         min = n1;
     }
 
-    for (size_t i = min; i < maxS.size; i++){
+    for (size_t i = min; i < maxS.size; i++) {
         rec = copy(maxS.words[i].begin, maxS.words[i].end, rec);
         *rec = ' ';
         rec++;
@@ -32,7 +32,7 @@ void getIdenticalStringInSize(char *s1, char *s2, size_t n1, size_t n2){
     *rec = '\0';
 }
 
-void test1_getIdenticalStringInSize_empty(){
+void test1_getIdenticalStringInSize_empty() {
     char a1[] = "";
     char a2[] = "";
     size_t n1 = 0;
@@ -42,7 +42,7 @@ void test1_getIdenticalStringInSize_empty(){
     ASSERT_STRING(a2, "");
 }
 
-void test2_getIdenticalStringInSize_s1Full_s2Empty(){
+void test2_getIdenticalStringInSize_s1Full_s2Empty() {
     char a1[] = "hello world";
     char a2[] = "";
     size_t n1 = 2;
@@ -52,7 +52,7 @@ void test2_getIdenticalStringInSize_s1Full_s2Empty(){
     ASSERT_STRING(a2, "hello world ");
 }
 
-void test3_getIdenticalStringInSize_s1Empty_s2Full(){
+void test3_getIdenticalStringInSize_s1Empty_s2Full() {
     char a1[] = "";
     char a2[] = "hello world";
     size_t n1 = 0;
@@ -62,7 +62,7 @@ void test3_getIdenticalStringInSize_s1Empty_s2Full(){
     ASSERT_STRING(a2, "hello world");
 }
 
-void test4_getIdenticalStringInSize_s1Full_s2Full(){
+void test4_getIdenticalStringInSize_s1Full_s2Full() {
     char a1[] = "hello world";
     char a2[] = "hello world";
     size_t n1 = 2;
@@ -72,7 +72,7 @@ void test4_getIdenticalStringInSize_s1Full_s2Full(){
     ASSERT_STRING(a2, "hello world");
 }
 
-void tests_getIdenticalStringInSize(){
+void tests_getIdenticalStringInSize() {
     test1_getIdenticalStringInSize_empty();
     test2_getIdenticalStringInSize_s1Full_s2Empty();
     test3_getIdenticalStringInSize_s1Empty_s2Full();

@@ -86,7 +86,8 @@
 				16,
 				17,
 				18,
-				19
+				19,
+				20
 			]
 		},
 		{
@@ -198,6 +199,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "string/tasks/getIdenticalStringInSize.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "string/tasks/lettersBelongString.h",
 			"sourceGroupIndex" : 0
 		}
 	],
